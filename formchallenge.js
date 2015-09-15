@@ -21,19 +21,17 @@ $(document).ready(function() {
 
 		$(".entry").append($myObject);
 
-		//gets the "remove" button to appear
+		//gets the "remove" button to appear and appends it 
 
 		var $myButton = $("<button>" + "Remove" + "<button>");
 
 		$(".entry").append($myButton);
 
 
-
+//when the remove button is clicked, the object is removed along with the button
 		$($myButton).on("click", function() {
 			$myObject.remove();
 			$myButton.remove();
-
-
 		});
 
 		$("span.reviewScore").each(function() {
@@ -56,7 +54,7 @@ $(document).ready(function() {
 			}
 
 		})
-
+//trying to figure out how to get the sum of the salaries
 		var employeeArray = [];
 		employeeArray.push($myObject);
 		console.log(employeeArray);
