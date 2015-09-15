@@ -1,0 +1,12 @@
+body {
+	padding: 10px;
+}
+
+.remove {
+	display: none;
+}
+
+.selected{
+	color: red;
+}
+
