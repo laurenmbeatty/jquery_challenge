@@ -21,6 +21,10 @@ $(document).ready(function() {
 
 		$(".entry").append($myObject);
 
+		var $inputs = $(".myInputs input");
+		//clears input fields but I need to put a div around the inputs
+		$(".myInputs input").val("");
+
 		//gets the "remove" button to appear and appends it 
 
 		var $myButton = $("<button>" + 'Remove' + "<button>");
