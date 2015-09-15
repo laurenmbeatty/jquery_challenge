@@ -15,7 +15,7 @@ $(document).ready(function() {
 		var $myObject = $("<li>" + employee.First + " " + employee.Last + "</br>" + 
 							employee.empNumber + "</br>" +
 							employee.Title + "</br>" +
-							employee.lastReviewScore + "</br>" +
+							'<span class = "reviewScore">' + employee.lastReviewScore + "</span>"+ "</br>" +
 							employee.Salary + "</br>" +
 							"</li>");
 
@@ -36,6 +36,27 @@ $(document).ready(function() {
 
 		});
 
+		$("span.reviewScore").each(function() {
+			var review = $(this).html();
+
+			switch(review) {
+				case("1"): $(this).css("color", "red");
+				break;
+				case("2"): $(this).css("color", "black");
+				break;
+				case("3"): $(this).css("color", "black");
+				break;
+				case("4"): $(this).css("color", "black");
+				break;
+				case("5"): $(this).css("color", "green");
+				break;
+				default: $(this).text("Please enter a number 1 through 5");
+				break;
+
+			}
+
+		})
+
 		var employeeArray = [];
 		employeeArray.push($myObject);
 		console.log(employeeArray);
@@ -51,16 +72,9 @@ $(document).ready(function() {
 
 	console.log(totalPaid(employeeArray));
 
-var $myEmployee = $(parseInt(employee.lastReviewScore));	
 
-console.log($myEmployee);
 
-if($myEmployee == 1) {
-	$($myEmployee).css({"color": "red"});
-} else {
-	$($myEmployee).css({"color": "green"});
 
-};
 
 });
 		
