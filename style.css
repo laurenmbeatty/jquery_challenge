@@ -24,7 +24,24 @@ li {
 	width: 300px;
 	padding-left: 125px;
 	padding-top: 50px;
-	height: 300px;
+	height: 500px;
 	background-color: #CCFFFF;
 }
+
+
+input {
+	border: 1px solid #4A4C4A;
+	border-radius: 5px;
+	width: 150px;
+	height: 30px;
+}
+
+input[type="text"], textarea {
+
+  background-color : #efefef; 
+
+}
+
+
+
 

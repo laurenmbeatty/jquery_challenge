@@ -23,7 +23,7 @@ $(document).ready(function() {
 
 		//gets the "remove" button to appear and appends it 
 
-		var $myButton = $("<button>" + "Remove" + "<button>");
+		var $myButton = $("<button>" + 'Remove' + "<button>");
 
 		$(".entry").append($myButton);
 
